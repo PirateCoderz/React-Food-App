@@ -1,0 +1,70 @@
+:root {
+    --bg-clr: #8a2b06;
+    --text-clr: #fff;
+}
+
+.head {
+    background-color:  var(--bg-clr);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* margin-bottom: 2rem; */
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--text-clr);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* .hamburger {
+    display: none;
+} */
+/* .navbar { margin-right: 1rem;} */
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-clr);
+    margin-right: 3.5rem;
+    text-decoration: none;
+}
+.navbar a:hover, .navbar a:active {
+    color: var(--main-clr);
+}
+
+.main-image {
+    width: 100%;
+    height: 25rem;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .main-image img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  }
+
+@media screen and (max-width:1024px) {
+    .navbar a {
+        margin-right: 1.5rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:868px) {
+    .education { display: none;}
+}
+@media screen and (max-width:748px) {
+    .navbar a {
+        margin-right: 2.5rem;
+        font-size: 1.2rem;
+    }
+    .about { display: none;}
+}
