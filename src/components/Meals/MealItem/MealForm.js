@@ -40,7 +40,7 @@ const MealForm = props => {
                         defaultValue: '1'
                     }}
                 />
-                <button>Add</button>
+                <button>+ Add</button>
                 {!amountIsValid && <p>Enter a Valid Amount</p>}
             </form>
         );

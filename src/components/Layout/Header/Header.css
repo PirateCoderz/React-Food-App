@@ -68,3 +68,6 @@
     }
     .about { display: none;}
 }
+@media (max-width:564px) {
+    .navbar { display: none;}
+}
