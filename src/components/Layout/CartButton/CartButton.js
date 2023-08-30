@@ -18,10 +18,14 @@ const CartButton = (props) => {
     useEffect(()=> {
         if(items.length === 0) return;
         setCartItemAdded(true);
-        setTimeout(() => {
+        
+        const timer = setTimeout(() => {
             setCartItemAdded(false);
-            
         }, 300);
+        
+        return () => {
+            clearTimeout(timer);
+        }
     }, [items])
     return ( 
         <button className={btnClass} onClick={props.onClick}>
