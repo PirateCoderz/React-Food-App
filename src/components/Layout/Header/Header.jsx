@@ -4,7 +4,7 @@ import './Header.css';
 import headerImg from "../../../assets/meals.jpg";
 import CartButton from '../CartButton/CartButton';
 
-function HeaderPage() {
+const HeaderPage = (props) => {
 
     return (
         <Fragment>
@@ -20,7 +20,7 @@ function HeaderPage() {
                     <a href="#skills" className="skills">Skills</a>
                     <a href="#contact" className="contact">Contact</a>
                 </nav>
-                <CartButton />
+                <CartButton onClick={props.onShowCart} />
             </header>
             <div className="main-image">
                 <img src={headerImg} alt="Food's HomePage" />
