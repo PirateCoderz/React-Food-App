@@ -13,9 +13,7 @@ const App = () => {
 
   const hideCartHandler = () => {
     setShowCart(false);
-
   }
-
 
   return (
     <CartProvider>

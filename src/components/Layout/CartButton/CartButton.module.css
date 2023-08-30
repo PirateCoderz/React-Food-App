@@ -57,3 +57,20 @@
       transform: scale(1);
     }
   }
+
+  @media (max-width:768px) {
+    .button {
+      padding: 0.5rem 0.75rem;
+    }
+    .icon {
+      width: 1rem;
+      height: 1rem;
+    }
+    .cartText {
+      font-size: 0.75rem;
+    }
+    .badge {
+      padding: 0.1rem 0.5rem 0.25rem;
+      margin-left: 0.375rem;
+    }
+  }
